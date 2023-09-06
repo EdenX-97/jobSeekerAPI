@@ -5,7 +5,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/get')
+@app.route('/get/')
 def get():
 
     # new_user = User(username='admin', email='asd@qq.com')
@@ -16,7 +16,7 @@ def get():
     return 'hello world'
 
 
-@app.route('/get1')
+@app.route('/get1/')
 def gett():
 
     return 'hello world1'

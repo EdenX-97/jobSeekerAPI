@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "/api/app"
+            "source": "/api/jobTrackerApi/(.*)",
+            "destination": "/api/jobTrackerApi.py"
         }
     ]
 }
