@@ -1,12 +1,11 @@
-from flask import Blueprint
 from database.models import User
 from database import db
+from flask import Flask
 
-jobTrackerApi = Blueprint('jobTrackerApi', __name__,
-                          url_prefix='/api/jobTrackerApi')
+app = Flask(__name__)
 
 
-@jobTrackerApi.route('/get')
+@app.route('/get')
 def get():
 
     # new_user = User(username='admin', email='asd@qq.com')
@@ -17,7 +16,7 @@ def get():
     return 'hello world'
 
 
-@jobTrackerApi.route('/get')
+@app.route('/get')
 def gett():
 
     return 'hello world1'

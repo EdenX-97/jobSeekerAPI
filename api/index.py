@@ -1,6 +1,5 @@
 import os
 from flask import Flask
-from .jobTrackerApi import jobTrackerApi
 from dotenv import load_dotenv
 from database import db
 
