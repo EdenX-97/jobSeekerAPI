@@ -16,7 +16,7 @@ def get():
     return 'hello world'
 
 
-@app.route('/get')
+@app.route('/get1')
 def gett():
 
     return 'hello world1'
