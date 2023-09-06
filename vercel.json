@@ -2,7 +2,7 @@
     "routes": [
         {
             "source": "/api/jobTrackerApi/(.*)",
-            "destination": "/api/jobTrackerApi"
+            "destination": "api/jobTrackerApi.py"
         }
     ]
 }
