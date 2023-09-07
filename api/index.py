@@ -1,11 +1,11 @@
-from database.models import User
-from database import db
 from flask import Flask
+from .jobTracker import jobTrackerBP
 
 app = Flask(__name__)
+app.register_blueprint(jobTrackerBP)
 
 
-@app.route('/get/')
+@app.route('/get')
 def get():
 
     # new_user = User(username='admin', email='asd@qq.com')
@@ -16,7 +16,7 @@ def get():
     return 'hello world'
 
 
-@app.route('/get1/')
+@app.route('/get1')
 def gett():
 
     return 'hello world1'
