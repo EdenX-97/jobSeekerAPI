@@ -2,5 +2,6 @@ flask
 Flask-SQLAlchemy
 psycopg2-binary
 python-dotenv
-Flask-Security
+flask-security-too
+sqlalchemy
 bcrypt
